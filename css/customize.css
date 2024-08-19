@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-black-100);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--skin-color);
+    border-radius: 5vh;
+}
 /* Aside */
 .logo{
     margin-top: -10px;
@@ -15,7 +25,49 @@
 .section{
     border-left: 1px solid var(--skin-color);
 }
+/* Home */
+@media(max-width:991px){
+    .home{
+        flex-direction: column-reverse;
+    }
+    .home .home-info, .home .home-img{
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin: 5vh;
+    }
+    .home .home-info{
+        order: 1;
+    }
+    .home .home-img{
+        order: 0;
+    }
+}
+@media(max-width:767px){
+    .home .home-info, .home .home-img{
+        margin: 0vh;
+    }
+    .home .home-img{
+        margin: 5vh 0vh;
+    }
+    .home .home-img::before,
+    .home .home-img::after{
+        display: none;
+    }
+}
+/* Skills */
+#distinctions .portfolio-heading h2{
+    color: var(--skin-color);
+}
 /* Portfolio */
+.portfolio .portfolio-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.portfolio .portfolio-item:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
 .portfolio .portfolio-item .portfolio-item-inner h3{
     text-align: center;
     margin: 5px;
@@ -86,4 +138,16 @@ body.clicked .modal-box{
 .service .service-item .service-item-inner:hover .icon .fab{
     font-size: 25px;
     color: #ffffff;
+}
+/* Contact */
+.contact-info-item-inner{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.35 ease;
+}
+.contact-info-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }

@@ -19,35 +19,17 @@
     <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="css/style-switcher.css">
+    <!-- Include the EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/emailjs-form.js"></script>
 </head>
 <body>
     <!-- ===== Main Container Start ===== -->
     <div class="main-container">
-        <!-- ===== Popup Start ===== -->
-        <span class="overlay"></span>
-        <div class="modal-box">
-            <h2>Secure Storage of Crypto Wallet Seed Phrase Using ECC and Splitting Technique</h2>
-            <br>
-            <h2>Authors</h2>
-            <p><b>Name: </b>Syeda Tayyaba Bukhari<br><b>Institute: </b>National University of Computer and Emerging Sciences (NUCES-FAST), Lahore, Pakistan<br><b>Email: </b>tayyaba.bukhari@nu.edu.pk
-                <br><br>
-                <b>Name: </b>Muhammad Umar Janjua<br><b>Institute: </b>Information Technology University of Punjab (ITU), Lahore, Pakistan<br><b>Email: </b>umar.janjua@itu.edu.pk
-                <br><br>
-                <b>Name: </b>Junaid Qadir<br><b>Institute: </b>Qatar University, Doha, Qatar<br><b>Email: </b>jqadir@qu.edu.qa
-            </p>
-            <br>
-            <h2>Abstract</h2>
-            <p>Blockchain technology enables users to control and record their cryptocurrency transactions through the use of digital wallets. As the use of blockchain technology and cryptocurrency wallets continues to grow in popularity, the potential for attacks on these wallets increases, as attackers seek to gain access to the large sums of cryptocurrency they contain. To mitigate these risks, it is important to conduct thorough security evaluations of wallets and implement strong protective measures. In recent years, there have been several incidents involving significant losses of cryptocurrency in crypto-wallets, and in this research, a comprehensive evaluation of seed phrase and password attack methods found in the published literature was conducted, and the topic was advanced by addressing the question of whether seed phrases are hackable. The research aims to use the elliptic-curve cryptography (ECC) encryption algorithm for storing the seed phrase online by encrypting the seed phrase and using the splitting technique to store the crypto wallet seed phrase. It was concluded that it is only possible to hack a seed phrase if a significant portion of it is already known, but even this would require a significant amount of time and computational power.</p>
-            <br>
-            <div class="modal-buttons">
-                <button class="btn close-modal">Close</button>
-            </div>
-        </div>
-        <!-- ===== Popup End ===== -->
         <!-- ===== Aside Start ===== -->
         <div class="aside">
             <div class="logo">
-                <a href="index.html"><span>E</span>merald</a>
+                <a href="index.html"><span>C</span>rusher</a>
             </div>
             <div class="nav-toggler">
                 <span></span>
@@ -56,10 +38,10 @@
                 <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
                 <li><a href="#qualification"><i class="fa fa-mortar-board"></i> Qualifications</a></li>
-                <li><a href="#distinctions"><i class="fa fa-star"></i> Distinctions</a></li>
+                <li><a href="#distinctions"><i class="fa fa-star"></i> Skills</a></li>
                 <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
                 <li><a href="#services"><i class="fa fa-tags"></i> Services</a></li>
-                <li><a href="#journals"><i class="fa fa-book"></i> Journals</a></li>
+                <li><a href="#journals"><i class="fa fa-book"></i> Publications</a></li>
                 <li><a href="#references"><i class="fa fa-address-card"></i> References</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
                 <div class="copyright">
@@ -75,13 +57,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello">Hi, I'm <span class="name">Tayyaba</span></h3>
-                            <h3 class="my-profession">A <span class="typing"></span></span></h3>
-                            <p>I'm a Blockchain enthusiast with an extensive experience for over 5 years</p>
-                            <a href="#" class="btn">Download CV</a>
+                            <h3 class="hello">Hi, I'm <span class="name">Hassaan</span></h3>
+                            <h3 class="my-profession">A Freelance <span class="typing"></span> Engineer</span></h3>
+                            <p>I'm a Top-Rated Freelancer with an extensive experience for over 5 years</p>
+                            <a href="./cv.pdf" target="_blank" class="btn">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
-                            <img src="images/portrait.png" alt="">
+                            <img src="images/portrait.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -99,24 +81,21 @@
                         <div class="about-content padd-15">
                             <div class="row">
                                 <div class="about-text padd-15">
-                                    <h3>My name is <span>Syeda Tayyaba Bukhari</span> and I am an <span>Educationist</span></h3>
-                                    <p>I'm a learner and blogger passionate about exploring new ideas and sharing knowledge. I aim to inspire curiosity and foster a community of engaged learners. Together, let's embark on a journey of exploration and enlightenment!</p>
+                                    <h3>My name is <span>Muhammad Hassaan Javed</span> and I am a <span>Freelancer</span></h3>
+                                    <p>I'm a results-driven DevOps, Cloud, and AI Engineer with expertise in deploying and managing scalable infrastructure. I'm passionate about exploring new technologies and sharing insights. I aim to inspire innovation and build a community of dedicated professionals. Together, let's embark on a journey of exploration and continuous learning!</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="personal-info padd-15">
                                     <div class="row">
                                         <div class="info-item padd-15">
-                                            <p>Website: <span>www.tayyababukhari.com</span></p>
+                                            <p>Email: <span><a href="mailto:muhammadhassaanjaved99@gmail.com" target="_blank">muhammadhassaanjaved99@gmail.com</a></span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>City: <span>Lahore</span></p>
+                                            <p>Website: <span><a href="https://itxcrusher.github.io/HassaanPortfolio" target="_blank">https://itxcrusher.github.io/HassaanPortfolio/</a></span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Email: <span>tayyaba.bukhari@icloud.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Degree: <span>CS</span></p>
+                                            <p>Portfolio: <span><a href="https://crusher-portfolio.s3.amazonaws.com/index.html" target="_blank">https://crusher-portfolio.s3.amazonaws.com/index.html/</a></span></p>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -135,17 +114,10 @@
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
-                                            <h5>Punjabi</h5>
+                                            <h5>English</h5>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 90%;"></div>
                                                 <div class="skill-percent">90%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>English</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 80%;"></div>
-                                                <div class="skill-percent">80%</div>
                                             </div>
                                         </div>
                                     </div>
@@ -160,27 +132,61 @@
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h4 class="timeline-title">Teaching</h4>
+                                                    <h4 class="timeline-title">DevOps Engineering</h4>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h4 class="timeline-title">Web Development</h4>
+                                                    <h4 class="timeline-title">Cloud Computing</h4>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h4 class="timeline-title">Android Apps Development</h4>
+                                                    <h4 class="timeline-title">Artificial Intelligence</h4>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h4 class="timeline-title">Programming</h4>
+                                                    <h4 class="timeline-title">Business Development</h4>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h4 class="timeline-title">Project Management</h4>
+                                                    <h4 class="timeline-title">Digital Marketing</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="education padd-15">
+                                    <h3 class="title">Passions</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h4 class="timeline-title">Lifelong Learning</h4>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h4 class="timeline-title">Technological Mystery</h4>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h4 class="timeline-title">Continuous Innovation</h4>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h4 class="timeline-title">Continuous Automation</h4>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h4 class="timeline-title">Building Efficient Systems</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -194,27 +200,61 @@
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h4 class="timeline-title">Learning new technologies</h4>
+                                                    <h4 class="timeline-title">Travel</h4>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h4 class="timeline-title">Exploring new Ideas</h4>
+                                                    <h4 class="timeline-title">Sports</h4>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h4 class="timeline-title">Continuous Learning</h4>
+                                                    <h4 class="timeline-title">Movies</h4>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h4 class="timeline-title">Reading</h4>
+                                                    <h4 class="timeline-title">Music</h4>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    <h4 class="timeline-title">Exploring</h4>
+                                                    <h4 class="timeline-title">Games</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Goals</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h4 class="timeline-title">Learn Personal and Soft Skills</h4>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h4 class="timeline-title">Achieve Work-Life Balance</h4>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h4 class="timeline-title">Mentor Aspiring Technologists</h4>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h4 class="timeline-title">Contribute to Open-Source</h4>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h4 class="timeline-title">Volunteer for non-profit Organizations</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -246,28 +286,99 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2019 - 2021
+                                                        <i class="fa fa-calendar"></i> Jul 2023 - Jan 2024
                                                     </h3>
-                                                    <h4 class="timeline-title">MS, Computer Science </h4>
-                                                    <p class="timeline-text">Information Technology University</p>
+                                                    <h4 class="timeline-title">DevOps and Serverless </h4>
+                                                    <p class="timeline-text">ITM Program by Systems Limited</p>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2016 - 2018
+                                                        <i class="fa fa-calendar"></i> Sep 2019 - Sep 2023
                                                     </h3>
-                                                    <h4 class="timeline-title">MCS, Computer Science</h4>
-                                                    <p class="timeline-text">Punjab University College of Information Technology</p>
+                                                    <h4 class="timeline-title">BS Physics</h4>
+                                                    <p class="timeline-text">GC University Faisalabad</p>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2014 - 2016
+                                                        <i class="fa fa-calendar"></i> Jul 2017 - Jul 2019
                                                     </h3>
-                                                    <h4 class="timeline-title">BSc Computer, Mathematics, Statistics</h4>
-                                                    <p class="timeline-text">University of the Punjab</p>
+                                                    <h4 class="timeline-title">FSc Pre-engineering</h4>
+                                                    <p class="timeline-text">Punjab Group of Colleges</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h3 class="title">Certificates</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Feb 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Freelancing Training</h4>
+                                                    <p class="timeline-text">Punjab IT Board</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Nov 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Social Media Marketing</h4>
+                                                    <p class="timeline-text">Punjab IT Board</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Oct 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Freelancing</h4>
+                                                    <p class="timeline-text">DigiSkills</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Oct 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">WordPress</h4>
+                                                    <p class="timeline-text">DigiSkills</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Sep 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">UI/UX Design</h4>
+                                                    <p class="timeline-text">Punjab IT Board</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> May 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Content Marketing and Advertising</h4>
+                                                    <p class="timeline-text">Punjab IT Board</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Feb 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Full Stack Designer and Developer</h4>
+                                                    <p class="timeline-text">Skills Improvement Foundation</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -281,46 +392,46 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2023
+                                                        <i class="fa fa-calendar"></i> Apr 2024
                                                     </h3>
-                                                    <h4 class="timeline-title">APO: Workshop on Blockchain Technologies for Business Innovation and Productivity</h4>
-                                                    <p class="timeline-text">Online</p>
+                                                    <h4 class="timeline-title">AI Skills Challenge</h4>
+                                                    <p class="timeline-text">Microsoft Learning 365</p>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2023
+                                                        <i class="fa fa-calendar"></i> Mar 2024
                                                     </h3>
-                                                    <h4 class="timeline-title">SAPI Training Session</h4>
-                                                    <p class="timeline-text">FAST CFD Campus</p>
+                                                    <h4 class="timeline-title">Azure Fundamentals Cloud Skill Challenge</h4>
+                                                    <p class="timeline-text">Microsoft Learn Student Ambassadors</p>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2023
+                                                        <i class="fa fa-calendar"></i> Jan 2024
                                                     </h3>
-                                                    <h4 class="timeline-title">Workshop for Educators - Designing and Delivering Data Science Courses at Scale</h4>
-                                                    <p class="timeline-text">LUMS</p>
+                                                    <h4 class="timeline-title">Cloud Seekho S5</h4>
+                                                    <p class="timeline-text">Google Developers Group</p>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2023
+                                                        <i class="fa fa-calendar"></i> Aug 2023
                                                     </h3>
-                                                    <h4 class="timeline-title">Demystifying Web 3.0</h4>
-                                                    <p class="timeline-text">UCP</p>
+                                                    <h4 class="timeline-title">Android Seekho S2</h4>
+                                                    <p class="timeline-text">Google Developers Group</p>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2022
+                                                        <i class="fa fa-calendar"></i> Jul 2022
                                                     </h3>
-                                                    <h4 class="timeline-title">OBE Oriented Exam Preparation Skills</h4>
-                                                    <p class="timeline-text">FAST Lahore</p>
+                                                    <h4 class="timeline-title">Resume Website Building</h4>
+                                                    <p class="timeline-text">Microsoft Learn Student Ambassadors</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -335,52 +446,43 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Jan 2022 - Present
+                                                        <i class="fa fa-calendar"></i> Jun 2024 - Present
                                                     </h3>
-                                                    <h4 class="timeline-title">Lecturer</h4>
-                                                    <p class="timeline-text">FAST-NUCES</p>
+                                                    <h4 class="timeline-title">DevOps Engineer</h4>
+                                                    <p class="timeline-text">Solutions Ally</p>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Aug 2022 - Present
+                                                        <i class="fa fa-calendar"></i> Feb 2024 - Present
                                                     </h3>
-                                                    <h4 class="timeline-title">Specialist-Resource Development</h4>
-                                                    <p class="timeline-text">Systems Limited</p>
+                                                    <h4 class="timeline-title">Business Development Manager</h4>
+                                                    <p class="timeline-text">Self-employed</p>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Jun 2021 - Dec 2021
+                                                        <i class="fa fa-calendar"></i> Aug 2019 - Present
                                                     </h3>
-                                                    <h4 class="timeline-title">Trainer</h4>
-                                                    <p class="timeline-text">Kamyab Jawan Program under NAVTTC</p>
+                                                    <h4 class="timeline-title">Professional Freelancer</h4>
+                                                    <p class="timeline-text">Upwork | Fiverr | Linkedin</p>
                                                 </div>
                                                 <!-- ===== Timeline item ===== -->
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Sep 2019 - Jan 2022
+                                                        <i class="fa fa-calendar"></i> Jan 2023 - Jun 2023
                                                     </h3>
-                                                    <h4 class="timeline-title">Teaching Assistant</h4>
-                                                    <p class="timeline-text">Information Technology University</p>
-                                                </div>
-                                                <!-- ===== Timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> Sep 2018 - Aug 2019
-                                                    </h3>
-                                                    <h4 class="timeline-title">Instructor</h4>
-                                                    <p class="timeline-text">University of South Asia</p>
+                                                    <h4 class="timeline-title">Full Stack Designer and Developer (Intern)</h4>
+                                                    <p class="timeline-text">Step Right</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <br>
-                                    <h3 class="title">Certificates</h3>
+                                    <h3 class="title">Licences</h3>
                                     <div class="row">
                                         <div class="timeline-box padd-15">
                                             <div class="timeline shadow-dark">
@@ -388,10 +490,144 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 20XX
+                                                        <i class="fa fa-calendar"></i> Jul 2024
                                                     </h3>
-                                                    <h4 class="timeline-title">Single Page Web Applications with AngularJS</h4>
-                                                    <p class="timeline-text">XYZ</p>
+                                                    <h4 class="timeline-title">Associate Cloud Engineer</h4>
+                                                    <p class="timeline-text">Google</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Jun 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">AI Engineer Associate</h4>
+                                                    <p class="timeline-text">Microsoft</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> May 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">GitHub Foundations</h4>
+                                                    <p class="timeline-text">GitHub</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Apr 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Cloud Computing Foundations</h4>
+                                                    <p class="timeline-text">Google</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Jul 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Cybersecurity Essentials</h4>
+                                                    <p class="timeline-text">Cisco</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> May 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Responsive Web Design</h4>
+                                                    <p class="timeline-text">freeCodeCamp</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h3 class="title">Courses</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">DevOps Engineering</h4>
+                                                    <p class="timeline-text">ITM Training Program</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Cloud Computing</h4>
+                                                    <p class="timeline-text">ITM Training Program</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">.Net</h4>
+                                                    <p class="timeline-text">ITM Training Program</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Data Structures</h4>
+                                                    <p class="timeline-text">ITM Training Program</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Database Management Systems</h4>
+                                                    <p class="timeline-text">ITM Training Program</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Design and Analysis of Algorithms</h4>
+                                                    <p class="timeline-text">ITM Training Program</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Introduction to Software Engineering</h4>
+                                                    <p class="timeline-text">ITM Training Program</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Object Oriented Programming</h4>
+                                                    <p class="timeline-text">ITM Training Program</p>
+                                                </div>
+                                                <!-- ===== Timeline item ===== -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Programming Fundamentals</h4>
+                                                    <p class="timeline-text">ITM Training Program</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -408,63 +644,488 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Distinctions</h2>
+                            <h2>Skills</h2>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>DevOps</h2>
+                        </div>
+                    </div><br>
                     <div class="row">
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Got Graduate Fellow Scholarship at ITU</h3>
+                                <h3>Linux</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Position Holder MSc CS-F16</h3>
+                                <h3>Docker</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Class Representor</h3>
+                                <h3>Kubernetes</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Appeared in Principal List of PUCIT</h3>
+                                <h3>Terraform</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Appeared in VC List of PUCIT</h3>
+                                <h3>Jenkins</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Got Merit Based Scholarship</h3>
+                                <h3>Ansible</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Team Lead of all Projects</h3>
+                                <h3>Git</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>GitHub</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Bash</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>CI/CD</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>Cloud</h2>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>AWS</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Topped in BSc</h3>
+                                <h3>Azure</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>GCP</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>IaaS</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>PaaS</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>SaaS</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Serverless</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Security</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Management</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Multi-Cloud</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Cloud Migration</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>Programming</h2>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Python</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Java</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>C++</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>C#</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>OOP</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Agile</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Test Driven Development</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Ajax</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Php</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>Development</h2>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>HTML</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>CSS</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>SASS</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>JavaScript</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>jQuery</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>React</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Angular</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Express Js</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Node Js</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>.Net</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Kotlin</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Flask</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Django</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>Database</h2>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>SQL</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>MySQL</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>PostgreSQL</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>MongoDB</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Schema</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Normalization</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Joins</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>Marketing</h2>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>SEO</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Content Writing</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Keyword Research</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Wordpress</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>Designing</h2>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Figma</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Adobe XD</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Adobe Photoshop</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Adobe Illustrator</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Responsive Web Design</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Prototyping</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                        <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Wireframing</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
@@ -481,99 +1142,153 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="portfolio-heading padd-15">
+                        <!-- <div class="portfolio-heading padd-15">
                             <h2>Projects Supervised:</h2>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="row">
                         <!-- ===== Portfolio Item Start ===== -->
                         <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-1.jpg" alt="">
+                            <a href="https://github.com/itxcrusher/StudentsData.git" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/12.jpg" alt="">
+                                    </div>
+                                    <h3>Serverless 3-Tier CRUD Application</h3>
                                 </div>
-                                <h3>Vehicle Vault</h3>
-                            </div>
+                            </a>
+                        </div>
+                        <!-- ===== Portfolio Item End ===== -->
+                         <!-- ===== Portfolio Item Start ===== -->
+                        <div class="portfolio-item padd-15">
+                            <a href="https://github.com/itxcrusher/Terraform" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/11.jpeg" alt="">
+                                    </div>
+                                    <h3>AWS Infrastructure Automation with Terraform</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- ===== Portfolio Item End ===== -->
+                         <!-- ===== Portfolio Item Start ===== -->
+                        <div class="portfolio-item padd-15">
+                            <a href="https://github.com/itxcrusher/Jenkins" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/10.jpg" alt="">
+                                    </div>
+                                    <h3>CI/CD Pipeline for GitHub Application Deployment</h3>
+                                </div>
+                            </a>
                         </div>
                         <!-- ===== Portfolio Item End ===== -->
                         <!-- ===== Portfolio Item Start ===== -->
                         <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-2.jpg" alt="">
+                            <a href="https://crusher-portfolio.s3.amazonaws.com/index.html" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/9.jpeg" alt="">
+                                    </div>
+                                    <h3>Interactive Portfolio Website with Advanced JavaScript</h3>
                                 </div>
-                                <h3>QuizzyPop</h3>
-                            </div>
+                            </a>
                         </div>
                         <!-- ===== Portfolio Item End ===== -->
                         <!-- ===== Portfolio Item Start ===== -->
                         <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-3.jpg" alt="">
+                            <a href="https://github.com/itxcrusher/AdminPanel.git" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/8.jpeg" alt="">
+                                    </div>
+                                    <h3>ASP.NET Core Admin Panel Application</h3>
                                 </div>
-                                <h3>Taqtee</h3>
-                            </div>
+                            </a>
                         </div>
                         <!-- ===== Portfolio Item End ===== -->
                         <!-- ===== Portfolio Item Start ===== -->
                         <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-4.jpg" alt="">
+                            <a href="https://github.com/itxcrusher/Ansible" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/7.jpeg" alt="">
+                                    </div>
+                                    <h3>Ansible-Docker Integration for Managed Node Deployment</h3>
                                 </div>
-                                <h3>BitBungalow</h3>
-                            </div>
+                            </a>
                         </div>
                         <!-- ===== Portfolio Item End ===== -->
                         <!-- ===== Portfolio Item Start ===== -->
                         <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-5.jpg" alt="">
+                            <a href="https://github.com/itxcrusher/" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/6.jpeg" alt="">
+                                    </div>
+                                    <h3>Diverse Bootstrap Projects</h3>
                                 </div>
-                                <h3>Mirage Madness</h3>
-                            </div>
+                            </a>
                         </div>
                         <!-- ===== Portfolio Item End ===== -->
                         <!-- ===== Portfolio Item Start ===== -->
                         <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-6.jpg" alt="">
+                            <a href="https://github.com/itxcrusher/PayeCash.git" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/5.jpeg" alt="">
+                                    </div>
+                                    <h3>Django Payment Processing Application Development & Deployment</h3>
                                 </div>
-                                <h3>Crypto Lottery System</h3>
-                            </div>
+                            </a>
                         </div>
                         <!-- ===== Portfolio Item End ===== -->
                         <!-- ===== Portfolio Item Start ===== -->
                         <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-1.jpg" alt="">
+                            <a href="https://github.com/itxcrusher/CSC120" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/4.jpeg" alt="">
+                                    </div>
+                                    <h3>Poker Game Implementation in Python and Java</h3>
                                 </div>
-                                <h3>Decentralized Voting System</h3>
-                            </div>
+                            </a>
                         </div>
                         <!-- ===== Portfolio Item End ===== -->
                         <!-- ===== Portfolio Item Start ===== -->
                         <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-2.jpg" alt="">
+                            <a href="https://itxcrusher.github.io/ArtGallery/" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/3.jpeg" alt="">
+                                    </div>
+                                    <h3>Static HTML & CSS Art Gallery</h3>
                                 </div>
-                                <h3>Ethereum Based dApp with ERC-721 To Issue NFTs</h3>
-                            </div>
+                            </a>
                         </div>
                         <!-- ===== Portfolio Item End ===== -->
                         <!-- ===== Portfolio Item Start ===== -->
                         <div class="portfolio-item padd-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-3.jpg" alt="">
+                            <a href="https://itxcrusher.github.io/HassaanPortfolio/" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/2.jpeg" alt="">
+                                    </div>
+                                    <h3>Static JavaScript CV Website Template</h3>
                                 </div>
-                                <h3>FASTCoin</h3>
-                            </div>
+                            </a>
+                        </div>
+                        <!-- ===== Portfolio Item End ===== -->
+                        <!-- ===== Portfolio Item Start ===== -->
+                        <div class="portfolio-item padd-15">
+                            <a href="https://github.com/itxcrusher/VirtualPetAdoption.git" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="images/portfolio/1.jpeg" alt="">
+                                    </div>
+                                    <h3>Virtual Pet Adoption Simulation in C++</h3>
+                                </div>
+                            </a>
                         </div>
                         <!-- ===== Portfolio Item End ===== -->
                     </div>
@@ -592,56 +1307,70 @@
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Member of Exam Committee</h3>
+                                <h3>DevOps Engineering</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Member of QEC Committee</h3>
+                                <h3>Cloud Engineering</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Member of the Department Recreation Committee</h3>
+                                <h3>AI Engineering</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Member of ACM Committee</h3>
+                                <h3>Programming</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Co-Advisor of Stacks FAST Society</h3>
+                                <h3>Frontend Development</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Blockchain Competition Advisor-SOFTEC-24</h3>
+                                <h3>Backend Development</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Blockchain Competition Advisor-SOFTEC-23</h3>
+                                <h3>Database Management</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
-                                <h3>Course Coordinator of Blockchain and Cryptocurrency</h3>
+                                <h3>Digital Marketing</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>UI/UX Designing</h3>
+                            </div>
+                        </div>
+                        <!-- ===== Service Item End ===== -->
+                         <!-- ===== Service Item Start ===== -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <h3>Graphic Designing</h3>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
@@ -654,23 +1383,61 @@
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
-                            <h2>Journals</h2>
+                            <h2>Publications</h2>
                         </div>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="portfolio-heading padd-15">
                             <h2>Research & Publications:</h2>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="row">
                         <!-- ===== Portfolio Item Start ===== -->
                         <div class="portfolio-item padd-15" id="journal-item">
-                            <div class="portfolio-item-inner shadow-dark show-details">
-                                <div class="portfolio-img">
-                                    <img src="images/journals/wallet.jpg" alt="">
+                            <a href="https://medium.com/@itxcrusher/deploying-apps-to-google-cloud-2a3809668a08" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark show-details">
+                                    <div class="portfolio-img">
+                                        <img src="images/publications/1.jpeg" alt="">
+                                    </div>
+                                    <h3>Deploying Apps to Google Cloud</h3>
                                 </div>
-                                <h3>Secure Storage of Crypto Wallet Seed Phrase Using ECC and Splitting Technique</h3>
-                            </div>
+                            </a>
+                        </div>
+                        <!-- ===== Portfolio Item End ===== -->
+                         <!-- ===== Portfolio Item Start ===== -->
+                        <div class="portfolio-item padd-15" id="journal-item">
+                            <a href="https://medium.com/@itxcrusher/building-a-devops-pipeline-in-gcp-46d9e36cc6b6" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark show-details">
+                                    <div class="portfolio-img">
+                                        <img src="images/publications/2.jpeg" alt="">
+                                    </div>
+                                    <h3>Building a DevOps Pipeline in GCP</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- ===== Portfolio Item End ===== -->
+                         <!-- ===== Portfolio Item Start ===== -->
+                        <div class="portfolio-item padd-15" id="journal-item">
+                            <a href="https://medium.com/@itxcrusher/develop-your-google-cloud-network-challenge-lab-solution-ec847a46a19a" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark show-details">
+                                    <div class="portfolio-img">
+                                        <img src="images/publications/3.jpeg" alt="">
+                                    </div>
+                                    <h3>Develop Your Google Cloud Network</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- ===== Portfolio Item End ===== -->
+                        <!-- ===== Portfolio Item Start ===== -->
+                        <div class="portfolio-item padd-15" id="journal-item">
+                            <a href="https://medium.com/@itxcrusher/implement-cloud-security-fundamentals-on-google-cloud-challenge-lab-solution-d49637f45400" target="_blank">
+                                <div class="portfolio-item-inner shadow-dark show-details">
+                                    <div class="portfolio-img">
+                                        <img src="images/publications/4.jpeg" alt="">
+                                    </div>
+                                    <h3>Implement Cloud Security Fundamentals on Google Cloud</h3>
+                                </div>
+                            </a>
                         </div>
                         <!-- ===== Portfolio Item End ===== -->
                     </div>
@@ -690,20 +1457,21 @@
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fab fa-linkedin"></i>
+                                    <i class="fa fa-phone"></i>
                                 </div>
-                                <h4>LinkedIn</h4>
+                                <h4>Ahmer Khan</h4>
+                                <p>+92 321 4499487</p>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
-                        <!-- ===== Service Item Start ===== -->
+                         <!-- ===== Service Item Start ===== -->
                         <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-laptop-code"></i>
+                                    <i class="fa fa-phone"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odio adipisci harum.</p>
+                                <h4>Asfandyar Akbar</h4>
+                                <p>+92 336 9866642</p>
                             </div>
                         </div>
                         <!-- ===== Service Item End ===== -->
@@ -724,30 +1492,42 @@
                     <div class="row">
                         <!-- ===== Contact Info Item Start ===== -->
                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call</h4>
-                            <p></p>
+                            <a href="tel:+923027538580" target="_blank">
+                                <div class="contact-info-item-inner">
+                                    <div class="icon"><i class="fa fa-phone"></i></div>
+                                    <h4>Call</h4>
+                                </div>
+                            </a>
                         </div>
                         <!-- ===== Contact Info Item End ===== -->
                         <!-- ===== Contact Info Item Start ===== -->
                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Location</h4>
-                            <p>Lahore, Pakistan</p>
+                            <a href="https://maps.app.goo.gl/sUELDzVFdkHNBYg2A" target="_blank">
+                                <div class="contact-info-item-inner">
+                                    <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                                    <h4>Location</h4>
+                                </div>
+                            </a>
                         </div>
                         <!-- ===== Contact Info Item End ===== -->
                         <!-- ===== Contact Info Item Start ===== -->
                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p>tayyaba.bukhari@icloud.com</p>
+                            <a href="mailto:muhammadhassaanjaved99@gmail.com" target="_blank">
+                                <div class="contact-info-item-inner">
+                                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                                    <h4>Email</h4>
+                                </div>
+                            </a>
                         </div>
                         <!-- ===== Contact Info Item End ===== -->
                         <!-- ===== Contact Info Item Start ===== -->
                         <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>Website</h4>
-                            <p>www.tayyababukhari.com</p>
+                            <a href="https://itxcrusher.github.io/HassaanPortfolio/" target="_blank">
+                                <div class="contact-info-item-inner">
+                                    <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                                    <h4>Website</h4>
+                                </div>
+                            </a>
                         </div>
                         <!-- ===== Contact Info Item End ===== -->
                     </div>
@@ -755,39 +1535,39 @@
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <!-- ===== Contact Form ===== -->
                     <div class="row">
-                        <div class="contact-form padd-15">
+                        <form class="contact-form padd-15" id="contact-form">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Message</button>
+                                    <input type="submit" value="Send Message" class="btn">
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>

@@ -1,8 +1,8 @@
 // Typing Animation
 var typed = new Typed(".typing", {
-    strings:["", "Blockchain Instructor", "Blockchain Developer"],
-    typeSpeed:100,
-    BackSpeed:60,
+    strings:["", "DevOps", "Cloud", "AI"],
+    typeSpeed:150,
+    BackSpeed:10,
     loop:true
 })
 
